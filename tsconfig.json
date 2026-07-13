@@ -1,10 +1,10 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     "target": "ESNext", // ECMAScript target version
     "module": "nodenext", // Module code generation
     "sourceMap": true, //Generates coresponding .map file
     "strict": true,
+    "rootDir": ".",
     "outDir": "dist", //Redirect output to the directory
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
