@@ -35,10 +35,25 @@ function logMessage(msg: string): void {
     console.log(msg);
 }
 
-// never
-function throwError(message: string): never {
+// never with optional-parameter
+function throwError(message: string, sameParam?: string): never {
     throw new Error(message);
 }
+
+// interface
+interface Data {
+    code: number;
+    text: string;
+};
+
+let httpCode: Data = {
+    code: 404,
+    text: 'Page not found',
+};
+
+// assertions / type casting - allow to pass type info to TS -> somthing like any
+let val: unknown = 20;
+let str = val as string;
 
 
 
