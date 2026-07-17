@@ -3,6 +3,7 @@ enum DaysOfTheWeek {
     Tuesday, // 1
 }
 console.log(DaysOfTheWeek.Tuesday);
+console.log(DaysOfTheWeek[1]);
 
 let day: DaysOfTheWeek;
 day = DaysOfTheWeek.Monday;

@@ -4,8 +4,8 @@
     "module": "nodenext", // Module code generation
     "sourceMap": true, //Generates coresponding .map file
     "strict": true,
+    "outDir": "out", //Redirect output to the directory
     "rootDir": ".",
-    "outDir": "dist", //Redirect output to the directory
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "moduleResolution": "nodenext",
