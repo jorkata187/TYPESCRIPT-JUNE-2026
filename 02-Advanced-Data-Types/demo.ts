@@ -10,7 +10,7 @@ function printMessage(text: string | string[]) {
 // Type Aliases & Intersection Types
 type Emploee = {
     name: string;
-    age: string;
+    age: number;
 }; // Custom Type
 
 type Age = number;
@@ -63,8 +63,8 @@ type OptionalPoints = {
   
   // Interface
   interface PersonInfo {
-    fullName: string,
-    email: string,
+    fullName: string;
+    email: string;
   }
 
   let thomas: PersonInfo = {
@@ -72,14 +72,15 @@ type OptionalPoints = {
     email: 'thomas.shelby@example.com'
   }
 
+  // Interface for function
   interface Calculator {
     (numOne: number, numTwo: number, operation: string): number;
-  }  // Interface for function 
+  }   
 
   // Implemented Interface by class
   interface ClockLayout {
-    hour: number,
-    minute: number,
+    hour: number;
+    minute: number;
     showTime (h: number, m: number): string;
   };
 
